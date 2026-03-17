@@ -1,7 +1,7 @@
 {
-  "name": "css-basics_pokemon-page",
+  "name": "css-positioning_absolute-position",
   "version": "0.0.0-unreleased",
-  "description": "Static HTML template with CSS",
+  "description": "Exercise for css positioning absolute",
   "main": "index.html",
   "nf": {
     "template": "html-css"

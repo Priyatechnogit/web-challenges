@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JS Basics and Variables: Lifetime Calculator
 
 ## Tasks
@@ -14,8 +15,3 @@ node index.js <age>
 node index.js 32
 ```
 
-## Notes
-
-- You only have to touch the `index.js` file.
-
-> ❗️ This project is JavaScript with Node only. Run the code in the terminal as shown above.
