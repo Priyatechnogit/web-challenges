@@ -1,7 +1,7 @@
 {
-  "name": "css-basics_pokemon-page",
+  "name": "css-flexbox_navigation",
   "version": "0.0.0-unreleased",
-  "description": "Static HTML template with CSS",
+  "description": "",
   "main": "index.html",
   "nf": {
     "template": "html-css"
