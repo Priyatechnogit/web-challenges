@@ -6,6 +6,13 @@ const operand2 = 4;
 // ----- Mathematical Operations -----
 
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
+// Mathematical buttons
+const addButton = document.querySelector('[data-js="add"]');
+const subtractButton = document.querySelector('[data-js="subtract"]');
+const multiplyButton = document.querySelector('[data-js="multiply"]');
+const divideButton = document.querySelector('[data-js="divide"]');
+const exponentButton = document.querySelector('[data-js="exponent"]');
+const moduloButton = document.querySelector('[data-js="modulo"]');
 
 // --v-- write your code here --v--
 
@@ -20,7 +27,35 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 3. Store the result in a variable.
 4. Log the result to the console.
 */
+addButton.addEventListener("click", () => {
+  const result = operand1 + operand2;
+  console.log(result);
+});
 
+subtractButton.addEventListener("click", () => {
+  const result = operand1 - operand2;
+  console.log(result);
+});
+
+multiplyButton.addEventListener("click", () => {
+  const result = operand1 * operand2;
+  console.log(result);
+});
+
+divideButton.addEventListener("click", () => {
+  const result = operand1 / operand2;
+  console.log(result);
+});
+
+exponentButton.addEventListener("click", () => {
+  const result = operand1 ** operand2;
+  console.log(result);
+});
+
+moduloButton.addEventListener("click", () => {
+  const result = operand1 % operand2;
+  console.log(result);
+});
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
@@ -36,7 +71,28 @@ Hint: To allow `operand1` to be updated, you might need to change its declaratio
 Step 1: Select each button for updating `operand1` by its `data-js` attribute.
 Step 2: Add event listeners to update `operand1` based on the button clicked. Log the updated value to the console.
 */
-
+const increaseButton = document.querySelector('[data-js="increase"]');
+const decreaseButton = document.querySelector('[data-js="decrease"]');
+const doubleButton = document.querySelector('[data-js="double"]');
+const halveButton = document.querySelector('[data-js="halve"]');
 // --v-- write your code here --v--
+increaseButton.addEventListener("click", () => {
+  operand1++;
+  console.log(operand1);
+});
 
+decreaseButton.addEventListener("click", () => {
+  operand1--;
+  console.log(operand1);
+});
+
+doubleButton.addEventListener("click", () => {
+  operand1 = operand1 * 2;
+  console.log(operand1);
+});
+
+halveButton.addEventListener("click", () => {
+  operand1 = operand1 / 2;
+  console.log(operand1);
+});
 // --^-- write your code here --^--
