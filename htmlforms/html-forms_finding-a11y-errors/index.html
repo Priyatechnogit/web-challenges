@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Forms and A11y</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1 id= "form-title" class="title">Understanding A11y in Forms</h1>
+    <!-- id should be given as same in the form i.e "form-title"  -->
+    <p id="description">
+      Please let us know how we can support you with a11y issues.
+    </p>
+
+    <form  aria-labelledby="form-title"> 
+          <!-- for is not allowed here in form -->
+      <fieldset aria-labelledby="description">
+         <!-- the fieldset is connected to the p with id description -->
+        <legend>Enter your information</legend>
+        <label for="first-name">Name:</label>
+        <!-- for is not used, we need 'for' to connect it-->
+        <input id="name-Input" type="text" />
+        <label>Age:</label>
+        <input id="age-Input" type="number" />
+        <!-- for age type should be given as number-->
+        <label>Color you cannot see:</label>
+        <input id="color-Input" name="color" type="color" />
+        <!-- for color input name was not given-->
+         <label for="message">Your Message:</label>
+          <!-- label for message is not given-->
+        <textarea id="message" name="message" rows="7"></textarea>
+        <!-- removed placeholder here and the id and name given as message bcz PH causes confusion-->
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
