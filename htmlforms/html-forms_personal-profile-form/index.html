@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+  <body>
+  <h1 id="form-title">Create your Personal Profile</h1>
+
+  <form action="" aria-labelledby="form-title">
+    <p id="form-description">
+      We want to get to know you! Please enter your personal information.
+    </p>
+
+    <fieldset aria-describedby="form-description">
+      <legend>Personal Information</legend>
+
+      <label for="first-name">First name</label>
+      <input 
+        type="text" 
+        id="first-name" 
+        name="first-name" 
+        minlength="3"
+        required 
+        aria-required="true"
+      />
+
+      <label for="last-name">Last name</label> 
+      <input 
+        type="text" 
+        id="last-name" 
+        name="last-name" 
+        minlength="2"
+        required 
+        aria-required="true"
+      />
+
+      <label for="date-of-birth">Your Birthday</label>
+      <input 
+        type="date" 
+        id="date-of-birth" 
+        name="date-of-birth"
+        required
+      />
+    </fieldset>
+
+    <p id="extra-info">
+      Can you tell us a little bit more? We want to annoy you with unwanted ads.
+    </p>
+
+    <fieldset aria-describedby="extra-info">
+      <legend>Further Information</legend>
+
+      <label for="favorite-color">Favorite color</label>
+      <input 
+        type="color" 
+        id="favorite-color" 
+        name="favorite-color" 
+        value="#E5430F"
+      />
+
+      <label for="favorite-pet">What is your favorite pet?</label>
+      <select 
+        id="favorite-pet" 
+        name="favorite-pet"
+        aria-labelledby="favorite-pet"
+        required
+      >
+        <option value="">--Please choose an option--</option>
+        <option value="agra-cadabra">Agra Cadabra</option>
+        <option value="chicken-turtle">Chicken Turtle</option>
+        <option value="fried-egg-jellyfish">Fried Egg Jellyfish</option>
+      </select>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
