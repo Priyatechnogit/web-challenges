@@ -20,7 +20,5 @@ for (const language of programmingLanguages){
   const li = document.createElement("li"); // it will create the list items
   li.textContent = language; // set the content from the array language
   ol.append(li); // finally adding/append the list items to the ol
-
-
 }
 // --^-- write or modify code above this line --^--
