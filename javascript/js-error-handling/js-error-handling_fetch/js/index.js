@@ -9,7 +9,18 @@ async function fetchUserData(url) {
     const response = await fetch(url, {
       headers: { "x-api-key": "reqres_c0aaf46c1fa2400e8fb8669bacd63171" },
     });
+  // here goes the code:
+  const contentType = response.headers.get("content-type"); // <-- iw will verify if the content is -JSON
 
+    // it will handle HTTP errors like 404
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+
+    // it will handle invalid content-type (not JSON)
+    if (!contentType || !contentType.includes("application/json")) {
+      throw new Error(`Expected JSON but received: ${contentType}`);
+    }
     return await response.json();
   } catch (error) {
     return { error: error.message };
