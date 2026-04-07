@@ -11,7 +11,7 @@ async function fetchUserData(url) {
     });
   // here goes the code:
   const contentType = response.headers.get("content-type"); // <-- iw will verify if the content is -JSON
-
+ 
     // it will handle HTTP errors like 404
     if (!response.ok) {
       throw new Error(`Request failed with status ${response.status}`);
